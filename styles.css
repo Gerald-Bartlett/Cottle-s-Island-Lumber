@@ -255,4 +255,158 @@ footer {
 
 /*Login Page*/
 
-/* .login */
+.login-navigation, .about-us-navigation {
+  background-color: black;
+}
+
+.login-container {
+ display: flex;
+ flex-wrap: wrap;
+
+}
+
+.left-login-container {
+  background-image: url(/imgs/home-image2.png); 
+  height: calc(100vh - 50px);
+  flex: 0.5;
+  background-repeat: no-repeat;
+
+}
+
+.right-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 0.5;
+}
+
+.right-login-container form {
+  margin: 0 auto;
+
+}
+
+.right-login-container input {
+  width: min(100%, 500px);
+  padding: 10px;
+  margin-top: 10px;
+  display: block;
+  font-size: 15px;
+}
+
+.right-login-container button {
+  padding: 10px 20px;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.right-login-container button:hover {
+  background-color:red;
+  color:white;
+}
+
+/* about us page*/
+
+.cards-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 280px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.cards:hover {
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.cards img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/*Mobile navigation*/
+
+.mobile-navigation {
+  display: none;
+}
+
+.mobile-navigation i {
+  position: fixed;
+  top: 20px;
+  font-size: 20px;
+  right: 20px;
+  color: white;
+  z-index: 99;
+}
+
+.mobile-navigation li {
+  list-style: none;
+}
+
+.mobile-navigation ul {
+  position: fixed;
+  left: -400px;
+  transition: left 0.3s linear;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  margin-top: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.mobile-navigation ul  li {
+  margin-top: 30px;
+}
+
+.mobile-navigation li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+ .mobile-navigation ul.show {
+   left: 0;
+   top: 0;
+ }
+
+ .about-us-mobile-navigation i {
+  color: black;
+ }
+
+
+@media screen and (max-width: 400px) {
+  .navigation {
+    display: none;
+  }
+  h1 {
+    font-size: 2.9rem;
+  }
+  .mobile-navigation {
+    display: block;
+  }
+
+ 
+  .outer-navigation {
+    padding-top: 0;
+  }
+  .our-mission{
+    padding: 30px;
+  }
+  .lumber-row .text-container {
+    padding: 10px;
+  }
+}
