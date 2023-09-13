@@ -1,5 +1,8 @@
-
-
+$("#scroll-icon").click(()=> {
+  $('html, body').animate({
+    scrollTop:$('.lumber-row').offset().top,
+  })
+})
 
 const mobileNav = document.querySelector('.mobile-navigation ul');
 console.log("clicked");

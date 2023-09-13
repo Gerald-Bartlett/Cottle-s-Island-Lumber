@@ -309,7 +309,7 @@ footer {
 /* about us page*/
 
 .cards-container {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -387,6 +387,34 @@ footer {
   color: black;
  }
 
+ .about-us-mobile-navigation ul.show i {
+  color: white;
+ }
+
+@media screen and (max-width: 700px) {
+
+
+  .lumber-row .text-container,
+  .lumber-row .img-container {
+    width: 100%;
+  }
+  .lumber-row:nth-of-type(2) {
+    flex-wrap: wrap-reverse;
+  }
+
+  .login-container {
+    height: 40vh;
+  }
+  .right-login-container {
+    flex:1;
+  }
+  .right-login-container input{
+    width: 100%;
+  }
+  .left-login-container {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 400px) {
   .navigation {
