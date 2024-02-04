@@ -402,8 +402,12 @@ footer {
   color: white;
  }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 481px) and (max-width: 767px)  {
 
+  .left-navigation {
+    font-size: 10px;
+    margin:20px;
+  }
 
   .lumber-row .text-container,
   .lumber-row .img-container {
@@ -425,9 +429,13 @@ footer {
   .left-login-container {
     display: none;
   }
+     img {
+       object-fit: contain;
+       width: 100%;
+     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .navigation {
     display: none;
   }
@@ -448,4 +456,8 @@ footer {
   .lumber-row .text-container {
     padding: 10px;
   }
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
 }
