@@ -33,6 +33,47 @@ margin: 0;
 padding-top: 20px;
 
 }
+.phone-icon{
+  text-align: center;
+  color:white; 
+  font-weight: 500;
+  font-size: large;
+  
+}
+
+.phone-icon-right{
+  display: inline-block;
+  text-align: center;
+  color:white; 
+  font-weight: 500;
+  font-size: large;
+  text-decoration: none;
+  
+}
+
+.phone-icon-contact{ 
+  color:white;
+  background-color: lightblue;
+  font-weight: 500;  
+  border: 1px solid black;  
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.phone-icon-contact:hover{ 
+  color:#04AA6D;
+  background-color: #fff;
+  font-weight: 900; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+
 
 .nav-content {
   max-width: 1500px;
@@ -404,9 +445,21 @@ footer {
 
 @media screen and (min-width: 481px) and (max-width: 767px)  {
 
-  .left-navigation {
+  .phone-icon{
     font-size: 10px;
-    margin:20px;
+  }
+ 
+  .phone-icon-right {
+    font-size: 10px;
+  
+  }
+  .left-navigation, .login-link {
+    display: inline-block;
+    font-size: 10px;
+    margin: auto;
+    width: auto;
+    padding: 0px 10px;
+    text-align: center;
   }
 
   .lumber-row .text-container,
